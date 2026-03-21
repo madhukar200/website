@@ -42,15 +42,15 @@
 
       <form id="contactForm" class="form__group">
         <label class="form__label" for="name">Enter your name:</label>
-        <input type="text" id="name" placeholder="Eg, Abhinay Shri" required autocomplete="name">
+        <input type="text" name="name" id="name" placeholder="Eg, Abhinay Shri" required autocomplete="name">
 
         <label class="form__label" for="email">Enter your email:</label>
-        <input type="email" placeholder="Abhinay05@mail.com" required autocomplete="email">
+        <input type="email" name="email" placeholder="Abhinay05@mail.com" required autocomplete="email">
         
         <label class="form__label" for="message">Enter your feedback:</label>
-        <input type="text" placeholder="Did you like this?" required>
+        <input type="text" name="message" placeholder="Did you like this?" required>
+        <button class="submit" id="submit">Submit Form</button>
       </form>
-      <button class="submit" id="submit">Submit Form</button>
     </section>
     <!-- Footer -->
     <footer class="footer">
@@ -64,6 +64,6 @@
       </div>
     </footer>
     <!-- Calling Script -->
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
