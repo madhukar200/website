@@ -18,7 +18,7 @@ contactForm.addEventListener('submit', async (e) => {
 
     try {
         // 4. Send the data to your LIVE Render server
-        const response = await fetch('https://backend-fzot.onrender.com', {
+        const response = await fetch('https://backend-fzot.onrender.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
