@@ -33,8 +33,9 @@ nav{
 }
 
 .nav__inner{
-  display: grid;
-  grid-template-columns: 9fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-size: 0.8rem;
 }
 .nav__title{
@@ -42,6 +43,7 @@ nav{
   display: flex;
   justify-content:start;
   align-items:center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 }
 .nav__brand{
   font-family: corinthia;
@@ -58,13 +60,15 @@ nav{
 .nav__brand{
   display: inline-block;
   animation: spin 5s linear infinite;
+  font-size: 2rem;
+  font-weight: bold;
 }
 @keyframes spin{
   from{
-    transform: rotate(0deg)
+    transform:rotateY(0deg);
   }
   to {
-    transform: rotate(360deg)
+    transform: rotateY(360deg);
   }
 }
 body{
@@ -106,7 +110,6 @@ body{
   border-width: 1px;
   width: 90vw;
   margin: auto;
-  text-align: center;
   padding-bottom: 1rem;
   color: var(--text-1);
   font-family: arial;
@@ -120,10 +123,14 @@ body{
 .form__group{
   padding-top: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
 }
 .form button{
   cursor: pointer;
-  width: 50vw;
+  text-align: center;
   margin-top: 1rem;
   border-style: none;
   padding: 0.2rem;
@@ -147,7 +154,6 @@ body{
 }
 .form input{
   height: 1.5rem;
-  width: 90%;
   margin-bottom: 1rem;
 }
 footer{
